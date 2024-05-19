@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> Glowing Rhapsody</h2>
+    <div class="full-width-text">
+        <span>
+            The Darling Harbour Fireworks is a significant event in Sydney. However, fireworks release pollutants, contributing to air and noise pollution while posing risks of accidents and injuries during handling and operation. In recent years, with the growing awareness of fireworks' environmental impact, 
+            individuals and organizations have for alternative and more sustainable forms of celebration. Other artistic presentations 
+            have emerged as potential substitutes, offering captivating visual experiences while mitigating fireworks' negative environmental and safety implications. Our group's design decision to do this project is to apply emergent design to the firework theme to create an interactive fireworks experience on a digital platform.
+            Click on the page to send a firework anywhere you want. Use the buttons to change the colour and size of the fireworks.
+            For the best experience, don't forget to turn the music on.
+        </span>
+      </div>
+    <div class="container">
+        <button class="background2" onclick="playAudio()" style="color: rgb(114, 200, 240);">Play Music</button>
+        <button class="background2" onclick="pauseAudio()" style="color: rgb(114, 200, 240);">Pause Music</button>
+    </div>
+
+    <div id="firework-container">
+        <img src="Opera house.png" alt="Opera house" id="firework-image">
+        <div id="ground"></div> <!-- Added ground element -->
+    </div>
+    
+    <div class="container">
+        <button class="background1" onclick="refreshScreen()" style="color: rgb(203, 164, 74);">Refresh Screen</button>
+        <button class="background1" onclick="changeFireworkColor()" style="color: rgb(214, 185, 98);">Firework Color</button>
+        <button class="background1" onclick="changeFireworkSize()" style="color: rgb(213, 183, 68);">Firework Size</button>
+        <button class="background1" onclick="changeBackgroundColor()" style="color: rgb(200, 185, 66);">Sky Color</button>
+        <audio id="myAudio" src="song.mp3"></audio>
+        <audio id="explosion-audio" src="soundeffect.mp3"></audio>
+    </div>
+
+    <body style="background-color: #000000;">    
+    </body>
+    <div class="full-width-text">
+        <span>Research: Ron Li, Jiayuan Zhang, Mingzhe Liu</span>
+      </div>
+      <div class="full-width-text">
+        <span>Design: Mingzhe Liu,  Jiayuan Zhang, Zihao Sun, Ron Li</span>
+      </div>
+      <div class="full-width-text">
+        <span>Code development: Zihao Sun, Ron Li, Mingzhe Liu</span>
+      </div>
+      <div class="full-width-text">
+        <span>Code testing and debugging:Zihao Sun, Ron Li, Mingzhe Liu</span>
+    </div>
+    
+</body>
+
+</html>
