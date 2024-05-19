@@ -1,0 +1,138 @@
+/*Create a container for the buttons and apes them evenly*/
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+/*Makes the button within the container grow to fill all the avaible space evenly*/
+.button-container button {
+    flex-grow: 1;
+    width: 100%;
+}
+
+/*Size of the container for the fireworks.*/
+#firework-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*Styles the container for the fireworks, 
+positioning it relative to its parent container, and sets its width and height */
+/* increace the size on larger screens */
+@media (min-width: 768px) {
+    #firework-container {
+        height: 600px;
+    }
+}
+
+@media (min-width: 992px) {
+    #firework-container {
+        height: 600px;
+    }
+}
+
+@media (min-width: 100px) {
+    #firework-container {
+        height: 600px;
+    }
+}
+
+/* set the color and size for 'ground' */
+#ground {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 28px;
+    background-color: rgba(12, 45, 193, 0.257);
+}
+
+/* set the color and size for fireworks(particles) */
+.firework {
+    position: absolute;
+    width: 2px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+/* a container using css grid for a responsive layout*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+
+
+}
+
+#firework-container {
+    position: relative;
+    background-color: rgb(7, 7, 9);
+}
+
+/* the image, positioning it absolutey at the bottom right of the container*/
+#firework-image {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    bottom: 0;
+    right: 0;
+}
+
+/* Adding a background colour to the 'buttons' */
+.background1 {
+    background-color: #020d28;
+    padding: 20px;
+    border-radius: 5px;
+    border: 0;
+
+}
+
+.background2 {
+    background-color: #010e2f;
+    padding: 20px;
+    border-radius: 5px;
+    border: 0;
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container button {
+    flex-grow: 1;
+    width: 100%;
+
+}
+
+/* Sets the margin and padding of the body element to 0 to remove any default spacing */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles a text container with a width of 100vw (viewport width), 
+padding, box-sizing, font family, border, and justified text alignment */
+.full-width-text {
+    width: 100vw;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    border: 2px solid black;
+    text-align: justify;
+}
+
+/* Sets the color of the text within <span> elements */
+span {
+    color: rgb(252, 251, 250);
+}
+
+
+h2 {
+    color: rgba(244, 213, 155, 0.885);
+}
